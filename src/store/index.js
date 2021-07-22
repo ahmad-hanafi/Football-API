@@ -10,16 +10,18 @@ export default new Vuex.Store({
     areas: [],
     teams: [],
     areasById : [],
-    team : {},
-    player: {},
-    number: 0
+    team : {}
   },
   mutations,
-  // getters: {
-  //   filteredAlbums: (state) => (val) => {
-  //     return state.photos.filter(photos => {return val.toLowerCase().split(' ').every(v => photos.title.toLowerCase().includes(v))})
-  //   }
-  // },
+  getters: {
+    filteredAreas: (state) => (val) => {
+      return state.areas.filter(areas => {return val.toLowerCase().split(' ').every(v => areas.name.toLowerCase().includes(v))})
+    },
+    filteredTeams: (state) => (val) => {
+      return state.teams.filter(teams => {return val.toLowerCase().split(' ').every(v => teams.name.toLowerCase().includes(v))})
+    },
+    
+  },
   actions,
   modules: {
   }

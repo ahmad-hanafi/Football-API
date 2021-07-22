@@ -18,22 +18,12 @@ const routes = [
   {
     path: '/teams/:id',
     name: 'Team',
-    component: () => import('../views/Team.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/Team.vue')
   },
   {
     path: '/areas/:id',
-    name: 'ChildAreas',
-    component: () => import('../views/ChildAreas.vue')
-  },
-  {
-    path: '/teams',
-    name: 'Teams',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Teams.vue')
-  },
-  {
-    path: '/players',
-    name: 'Players',
-    component: () => import('../views/Players.vue')
+    name: 'Areas',
+    component: () => import( /* webpackChunkName: "about" */ '../views/Areas.vue')
   }
 ]
 

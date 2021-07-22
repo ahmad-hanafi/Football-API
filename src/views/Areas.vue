@@ -1,6 +1,5 @@
 <template>
   <div>
-      <h1>Ini di childAreas</h1>
       <ChildAreas />
   </div>
 </template>
@@ -9,7 +8,7 @@
 import ChildAreas from "@/components/ChildAreas.vue";
 
 export default {
-    name : "ChildAreas",
+    name : "Areas",
     components: {
         ChildAreas
     }

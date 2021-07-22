@@ -1,6 +1,5 @@
 <template>
   <div>
-      <h1>Ini di TeamCard</h1>
       <TeamCard />
   </div>
 </template>
